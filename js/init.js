@@ -28,17 +28,15 @@
 ### **_Библиотека с markdown редактором которую мы подключали в проект_**
 [Ссылочка](https://github.com/markedjs/marked)
 		`
-	}	
+	},	
 	{
 		id: 3,
 		title: `## Сегодня был localStorage`,
 		content: `Кратко о данном дне:
-### **_Шпаргалка markdown_**
-[Ссылочка](https://github.com/WebCademy/Markdown-Cheatsheet)
-### **_Онлайн редактор для тренировки с разметкой markdown_**
-[Ссылочка](https://dillinger.io/)
-### **_Библиотека с markdown редактором которую мы подключали в проект_**
-[Ссылочка](https://github.com/markedjs/marked)
+### **_Статья о localStorage_**
+[Ссылочка](https://developer.mozilla.org/ru/docs/Web/API/Window/localStorage)
+### **_Метод JSON_**
+[Ссылочка](https://learn.javascript.ru/json)
 		`
 	}
 	]
