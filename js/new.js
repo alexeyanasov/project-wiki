@@ -4,6 +4,8 @@
 	// Получаем DOM-элементы
 	const markdownSourceElement = document.querySelector('#markdown-source')
 	const markdownResultElement = document.querySelector('#markdown-result')
+	const saveArticleButton = document.querySelector('#save-article-button')
+	const articleTitleElement = document.querySelector('#article-title')
 
 	// markdownSourceElement.value = 'Тестовая строка от JS'
 	// markdownResultElement.innerHTML = 
@@ -40,6 +42,25 @@ Lorem __имени__, продолжил _своего_ реторический
 		const result = marked(markdownSourceElement.value)
 		markdownResultElement.innerHTML = result
 		// console.log(result)
+	})
+	saveArticleButton.addEventListener('click', function(){
+		// console.log('fired')
+		const newArticle = {
+			id: 0,
+			title: articleTitleElement.value,
+			content: markdownSourceElement.value
+		}
+		// console.log(newArticle)
+		// Возвращаем строку
+		const json = localStorage.getItem('articles')
+		// Преобразовываем в объект
+		const articles = JSON.parse(json)
+		// console.log(articles)
+		// id + 1
+		newArticle.id = articles.length + 1
+		// Добавляем в массив
+		articles.push(newArticle)
+		localStorage.setItem('articles', JSON.stringify(articles))
 	})
 
 	console.log(markdownSourceElement, markdownResultElement)
