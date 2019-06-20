@@ -94,6 +94,7 @@ a:hover {
 }
 
 .main-col {
+	width: 100%;
 	padding-left: 35px;
 	padding-right: 25px;
 	background-color: #fff;
