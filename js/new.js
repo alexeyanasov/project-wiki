@@ -58,5 +58,4 @@
 		}
 
 	})
-	// console.log(markdownSourceElement, markdownResultElement)
 })();
